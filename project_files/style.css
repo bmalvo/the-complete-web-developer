@@ -4,7 +4,7 @@ body {
     background-repeat: no-repeat;
 }
 
-h2 {
+h2, p {
     color: #072200;
     text-align: center;
     border: 5px solid #0A2F00;
@@ -19,4 +19,17 @@ li {
     list-style: none;
     display: inline;
     color: coral;
+}
+
+.webtext {
+   border: 5px dashed green  
+}
+
+#div1 {
+    background: rgba(0, 0, rgba(31, 31, 129), 0.2);
+    border: 5px solid;
+}
+
+#div2 {
+    background: rgb(red, green, blue);
 }
