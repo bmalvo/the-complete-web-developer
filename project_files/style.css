@@ -1,7 +1,22 @@
+body {
+    background-image: url(./view.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 h2 {
-    color: red;
+    color: #072200;
+    text-align: center;
+    border: 5px solid #0A2F00;
+    cursor: pointer;
 }
 
 p {
-    color: pink;
+    color: #C19986;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    color: coral;
 }
