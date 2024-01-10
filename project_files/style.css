@@ -45,3 +45,14 @@ li {
 #div2 {
     background:  rgba(174, 196, 102, 0.2);
 }
+
+img {
+    width: 150px;
+    float: left;
+}
+
+footer {
+    color: aliceblue;
+    clear: both;
+    text-align: center;
+}
