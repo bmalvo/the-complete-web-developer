@@ -11,8 +11,21 @@ h2, p {
     cursor: pointer;
 }
 
+
 p {
     color: #C19986;
+    text-decoration: underline;
+    line-height: 30px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 110%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.about {
+    font-family: 'Bungee Spice', sans-serif;
+    text-decoration: none;
+    background-color: rgba(127, 255, 212, 0.1);
 }
 
 li {
@@ -21,15 +34,14 @@ li {
     color: coral;
 }
 
-.webtext {
+.webtext:first-child {
    border: 5px dashed green  
 }
 
 #div1 {
-    background: rgba(0, 0, rgba(31, 31, 129), 0.2);
-    border: 5px solid;
+    background-color: rgba(118, 118, 227,0.2);
 }
 
 #div2 {
-    background: rgb(red, green, blue);
+    background:  rgba(174, 196, 102, 0.2);
 }
