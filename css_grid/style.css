@@ -1,10 +1,16 @@
+.container {
+    display: grid;
+    gap: 1%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 .zone {
     cursor:pointer;
-    display:inline-block;
+    /* display:block; */
     text-align: center;
     font-size:10em;
     border-radius:4px;
-    border:1px solid #bbb;
+    border:1px solid #8cfb6a;
     transition: all 0.3s linear;
 }
 
