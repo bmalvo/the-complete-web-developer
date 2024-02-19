@@ -1,7 +1,16 @@
-let user = {
+let user = [{
     usernname: 'Wojtek',
     password: 'Par'
-};
+},
+{
+    username: 'Digi',
+    password: 'auchan02'
+},
+{
+    username: 'Ninja',
+    password: 'wierzbowa'
+    
+}];
 
 let database = [user];
 
@@ -22,9 +31,20 @@ let newsfeed = [
 let userNamePrompt = prompt('What is your name?');
 let userPassword = prompt('What is your password?');
 
+function isUserValid(user, pass) {
+    for (let i = 0; i < database.length; i++) {
+        if (database[i].username === user && 
+            database[i].password === pass) {
+            return true 
+        } else {
+            alert('Wrong username or password')
+        };
+    };
+    return false
+}
+
 function signIn(user, pass) {
-    (user === database[0].usernname &&
-        pass === database[0].password) ? console.log(newsfeed) : alert('Wrong data!');
+    (isUserValid(user, pass)) ? console.log(newsfeed) : alert('Wrong data!');
 };
 
 signIn(userNamePrompt, userPassword);
