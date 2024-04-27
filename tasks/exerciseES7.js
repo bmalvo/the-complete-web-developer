@@ -12,7 +12,9 @@ console.log(ifIncludes);
 // name or names in an array.
 const dragons2 = ['Tim', 'Johnathan', 'Sandy', 'Sarah'];
 
+const includesJohn = dragons2.filter(word => word.includes('John'));
 
+console.log(includesJohn);
 
 // #3) Create a function that calulates the power of 100 of a number entered as a parameter
 
