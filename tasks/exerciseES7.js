@@ -18,6 +18,10 @@ console.log(includesJohn);
 
 // #3) Create a function that calulates the power of 100 of a number entered as a parameter
 
+const powerOf3 = num => num ** 100;
+
+console.log(powerOf3(2))
+
 
 // #4) Useing your function from #3, put in the paramter 10000. What is the result?
 // Research for yourself why you get this result
