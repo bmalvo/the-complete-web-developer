@@ -10,6 +10,9 @@ console.log(array.flat(3)) // [ 1, 2, 3, 4, 5 ]
 // #2 Turn this array into a new array: [ 'Hello young grasshopper!', 'you are', 'learning fast!' ]
 const greeting = [["Hello", "young", "grasshopper!"], ["you", "are"], ["learning", "fast!"]];
 
+const newGreeting = greeting.flatMap(subArray => subArray.join(" "))
+
+console.log(newGreeting) // [ 'Hello young grasshopper!', 'you are', 'learning fast!' ]
 
 
 //#3 Turn the greeting array above into a string: 'Hello young grasshopper you are learning fast!'
