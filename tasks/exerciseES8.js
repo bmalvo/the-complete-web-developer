@@ -12,8 +12,8 @@ let rabbit = '🐇';
 
 // when you do:
 console.log(startLine);
-console.log(turtle);
-console.log(rabbit);
+console.log(turtle.padStart(9));
+console.log(rabbit.padStart(9));
 
 
 // #2) What happens when you run turtle.trim().padEnd(9, '=') on the turtle variable
