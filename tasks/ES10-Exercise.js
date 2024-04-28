@@ -31,7 +31,9 @@ console.log(UnTrapped); // [ 3 ]
 //#5 Clean up this email to have no whitespaces. Make the answer be in a single line (return a new string):
 const userEmail3 = '     cannotfillemailformcorrectly@gmail.com   '
 
+const fixedUserEmail3 = userEmail3.trim()
 
+console.log(fixedUserEmail3); // cannotfillemailformcorrectly@gmail.com
 
 //#6 Turn the below users (value is their ID number) into an array: [ [ 'user1', 18273 ], [ 'user2', 92833 ], [ 'user3', 90315 ] ]
 const users = { user1: 18273, user2: 92833, user3: 90315 }
