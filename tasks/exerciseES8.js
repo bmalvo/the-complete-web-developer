@@ -30,3 +30,7 @@ let obj = {
 }
 // to this:
 'my name is Rudolf the raindeer'
+
+const {my, is, the} = obj
+
+console.log(`my ${my} is ${is} the ${the}`)
