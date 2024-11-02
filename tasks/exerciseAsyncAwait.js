@@ -30,9 +30,26 @@ const getData = async function () {
     urls.map((url) => fetch(url).then((resp) => resp.json())),
   );
   console.log("users", users);
-  console.log("posta", posts);
+  console.log("posts", posts);
   console.log("albums", albums);
 };
+
+// resolve #2 => 
+
+const promises = urls.map(async (url) => {
+
+  const response = await fetch(url)
+  return response.json();
+})
+
+const getAllData = async () => {
+
+  const [users, posts, albums] = await Promise.all(promises);
+
+  console.log(users);
+  console.log(posts);
+  console.log(albums);
+}
 
 // #3)Add a try catch block to the #2 solution in order to catch any errors. // Now, use the given array containing an invalid url, so you console.log  //your error with 'oooooops'.
 const urls2 = [
