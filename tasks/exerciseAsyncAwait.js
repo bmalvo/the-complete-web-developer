@@ -5,6 +5,16 @@ fetch("https://jsonplaceholder.typicode.com/users/")
   .then((response) => response.json())
   .then(console.log);
 
+
+// resolve #1 => 
+const fetchingUsers = async () => {
+  
+  users = await fetch("https://jsonplaceholder.typicode.com/users/");
+  response = await users.json();
+
+  return response;
+  }
+
 // #2) ADVANCED: Update the function below from the video to also have
 // async await for this line: fetch(url).then(resp => resp.json())
 // So there shouldn't be any .then() calls anymore!
@@ -25,7 +35,7 @@ const getData = async function () {
 };
 
 // #3)Add a try catch block to the #2 solution in order to catch any errors. // Now, use the given array containing an invalid url, so you console.log  //your error with 'oooooops'.
-const urls = [
+const urls2 = [
   "https://jsonplaceholder.typicode.com/users",
   "https://jsonplaceholdeTYPO.typicode.com/posts",
   "https://jsonplaceholder.typicode.com/albums",
