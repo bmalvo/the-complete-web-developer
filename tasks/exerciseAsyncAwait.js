@@ -57,3 +57,27 @@ const urls2 = [
   "https://jsonplaceholdeTYPO.typicode.com/posts",
   "https://jsonplaceholder.typicode.com/albums",
 ];
+
+
+
+const getAllData2 = async () => {
+  
+  try {
+    
+  const promises2 = urls2.map(async (url) => {
+    
+    const response = await fetch(url)
+    return response.json();
+  })
+
+    const [users, posts, albums] = await Promise.all(promises2);
+    
+    console.log(users);
+    console.log(posts);
+    console.log(albums);
+
+  } catch (e) {
+
+    console.log('oooooops => ', e)
+  }
+}
