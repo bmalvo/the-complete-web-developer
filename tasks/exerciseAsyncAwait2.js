@@ -53,3 +53,5 @@ console.log(data);
 //!! It will actually give you an error: "await is only valid in async functions and the top level bodies of modules"
 //WHY?
 
+// ANSWER: Top Level Await ONLY works inside of a module. We were able to run this code in the chrome dev tools
+// because inside the console, it technically runs like a module. 
