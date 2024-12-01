@@ -32,6 +32,17 @@ const getData = async function () {
 
 // --------- Answer:
 
+const urls2 = [
+  "https://jsonplaceholder.typicode.com/users",
+  "https://jsonplaceholder.typicode.com/posts",
+  "https://jsonplaceholder.typicode.com/albums",
+];
+
+const [users, posts, albums] = await Promise.all(urls2.map((url) => fetch(url).then((resp) => resp.json())));
+  
+console.log("users", users)
+console.log("posta", posts)
+console.log("albums", albums)
 
 
 // #3  ADVANCED: Try to run this piece of code just as a JS file not inside the browser dev tool, instea using this:
