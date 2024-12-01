@@ -9,7 +9,9 @@ async function fetchStarship() {
 
 // --------- Answer:
 
-
+const responseAns = await fetch("https://jsonplaceholder.typicode.com/users");
+const dataAns = await responseAns.json();
+console.log(dataAns);
 
 
 // #2) ADVANCED: Remove the async function from the below wherever possible:
